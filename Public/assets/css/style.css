@@ -1,0 +1,214 @@
+/* header part */
+h1{
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    background-color: white;
+}
+#myHeader a{
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: lightgrey;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white; /* white*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+/* The sidebar links */
+#linkNavSidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar .row{
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidebar h5{
+    top: 0;
+    position: absolute;
+    margin-top: -20px;
+}
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-left: -20px;
+}
+/* end of header part */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main i{
+    font-size: 20px;
+}
+/* media queries responsive */
+@media screen and (max-width: 1100px) {
+    #myResponsiveNav{
+        display: block;
+    }
+    #myHeader, #myNavBar{
+        display: none;
+    }
+    .card-fluid h2{
+        font-size: 25px;
+    }
+    .carousel-inner{
+        height: 30vh;
+    }
+    .carousel-item .img-fluid{
+        width: 19vh;
+        height: 30vh;
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-right, .carousel-multi-item .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+    .carousel-multi-item .carousel-inner .carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-right {
+        transform: translateX(0);
+    }
+}
+@media screen and (min-width: 1100px) {
+    #myHeader, #myNavBar{
+        display: flex;
+    }
+    #myResponsiveNav{
+        display: none;
+    }
+    .card-fluid p{
+        font-size: 30px;
+    }
+    .list-group-flush .list-group-item{
+        font-size: 25px;
+    }
+    .card-fluid .btn-danger{
+        font-size: 25px;
+    }
+    .carousel-inner{
+        height: 36vh;
+    }
+    .carousel-item .img-fluid{
+        width: 25vh;
+        height: 36vh;
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-right, .carousel-multi-item .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+    .carousel-multi-item .carousel-inner .carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-right {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 450px){
+    .carousel-multi-item h2{
+        font-size: 19px;
+    }
+    .carousel-inner{
+        height: 26vh;
+    }
+    .carousel-item .img-fluid{
+        width: 16vh;
+        height: 26vh;
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+    .carousel-multi-item .carousel-inner .active.carousel-item-right, .carousel-multi-item .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+    .carousel-multi-item .carousel-inner .carousel-item-left, .carousel-multi-item .carousel-inner .carousel-item-right {
+        transform: translateX(0);
+    }
+
+}
+/* end of media queries*/
+/* main part */
+html body {
+    background-color: lightgrey;
+}
+main{
+    background-color: lightgrey;
+}
+#myCardCarousels h2{
+    margin-left: -20px;
+}
+.carousel-item .img-fluid{
+    position: relative;
+    margin-bottom: 150px;
+}
+.imageContainer{
+    position: relative
+}
+.carousel-multi-item .carousel-inner .carousel-item.active,
+.carousel-multi-item .carousel-inner .carousel-item.next,
+.carousel-multi-item .carousel-inner .carousel-item.prev{
+    display: flex;
+}
+.imageContainer{
+    width: 100%;
+    height: auto;
+}
+/* end of main part */
+/* footer part */
+#footerContainer{
+    padding-bottom: -5px;
+    border: 2px solid lightgrey;
+}
+#footerContainer .info{
+    border: 2px solid lightgrey;
+}
+footer a{
+    color: black;
+}
+footer .fa{
+    font-size: 50px;
+}
+.bottom{
+    background-color: black;
+    margin-bottom: -20px;
+}
+.bottom p{
+    color: white;
+    font-size: 18px;
+}
+/* end of footer part */
+/* page form part*/
+/* media queries form page */
+@media screen and (min-width: 1000px) {
+    form label{
+        text-align: right;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #formContainer h1{
+        font-size: 35px;
+    }
+}
